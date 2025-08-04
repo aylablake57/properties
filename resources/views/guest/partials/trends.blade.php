@@ -1,9 +1,9 @@
-    @php 
+    @php
         $pieData = getPieChartData();
         $splineData = getSplineChartData();
     @endphp
     <h4>Trends</h4>
-    <p>Most Searched Locations in DHA <span class="badge bg-accent">{{date('M Y')}} </span></p>
+    <p>Most Searched Locations in DHA <span class="badge bg-accent">{{ date('M Y') }} </span></p>
     <!-- Highcharts Containers added by Hamza Amjads-->
     <div class="charts-container">
         <div id="userSearchesTrend" class="chart-container"></div>
@@ -65,7 +65,8 @@
                             }, 1000); // Fetch every second
                         },
                         redraw: function() {
-                            console.log('Chart has been redrawn'); // For debugging, log when the chart redraws
+                            console.log(
+                                'Chart has been redrawn'); // For debugging, log when the chart redraws
                         }
                     }
                 },
@@ -134,13 +135,20 @@
 
 
             // Location Wise Searches Trend Chart
-            function createOrUpdateChart() 
-            {
+            function createOrUpdateChart() {
                 if (window.locationWiseChart) {
                     window.locationWiseChart.destroy();
                 }
 
                 var locationWiseData = @json($pieData);
+
+                locationWiseData = locationWiseData.filter(function(item) {
+                    return (
+                        typeof item.name === 'string' &&
+                        item.name.trim() !== '' &&
+                        /[a-zA-Z]/.test(item.name)
+                    );
+                });
 
                 window.locationWiseChart = Highcharts.chart('locationWiseSearchesTrend', {
                     chart: {

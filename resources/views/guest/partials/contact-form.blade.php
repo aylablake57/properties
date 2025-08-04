@@ -19,7 +19,7 @@
             @enderror
         </div>
         <div class="col-sm-6 mb-3">
-            <x-phone-input name="mobile" value="{{ old('mobile') }}" placeholder="Your Phone" />
+            <x-phone-input name="mobile" value="{{ old('mobile') }}" placeholder="Your Phone *" />
         </div>
         {{-- Dropdown started by Hamza Amjad --}}
         <div class="col-sm-6 mb-3">
@@ -40,7 +40,7 @@
         {{-- Dropdown end --}}
 
         <div class="col-sm-12 mb-3">
-            <x-textarea name="message" id="message" placeholder="Message" maxlength="1500" required="true"
+            <x-textarea name="message" id="message" placeholder="Message *" maxlength="1500" required="true"
                 value="{{ old('message') }}" />
         </div>
         <div class="col-sm-4 justify-content-start pt-4">
