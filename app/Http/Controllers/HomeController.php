@@ -87,7 +87,6 @@ class HomeController extends Controller
                     ->orWhereNull('is_sold');
             })->latest();
         $filtered = $this->searchProperties(search: $request, data: $properties);
-
         if (!$filtered['isSearchEmpty']) {
             $properties = $filtered['properties']->paginate(9);
 
@@ -165,12 +164,23 @@ class HomeController extends Controller
         }
 
         // search by area range
+        if (!$search->filled('max_area') && $search->filled('min_area')) {
+            if ($search->input('min_area') != 0) {
+                $emptySearchValues = false;
+                $minArea = (int) $search->input('min_area');
+                $data = $data->where('area_size', '>=', $minArea)
+                    ->where('area_unit', 'marla');
+            }
+        }
+
         if ($search->filled('max_area') && $search->filled('min_area')) {
             if ($search->input('min_area') != 0 || $search->input('max_area') != 0) {
                 $emptySearchValues = false;
-                $data = $data->where('area_size', '<=', $search->max_area)
+                $minArea = (int) $search->input('min_area');
+                $maxArea = (int) $search->input('max_area');
+                $data = $data->where('area_size', '<=', $maxArea)
                     ->where('area_unit', 'marla');
-                $data = $data->where('area_size', '>=', $search->min_area)
+                $data = $data->where('area_size', '>=', $minArea)
                     ->where('area_unit', 'marla');
             }
         }

@@ -126,7 +126,7 @@
                                 <div class="row">
                                     <div class="col-lg-3 mb-3">
                                         <div class="rounded border-all p-2">
-                                            <a href="search?type=commercial&sub_type=12&size=2&unit=marla">
+                                            <a href="search?type=2&sub_type=12&size=2&unit=marla">
                                                 <h6 class="mb-0"><i class="fa-solid fa-building me-2"></i>Small
                                                     Offices For Sale</h6>
                                             </a>
@@ -134,7 +134,7 @@
                                     </div>
                                     <div class="col-lg-3 mb-3">
                                         <div class="rounded border-all p-2">
-                                            <a href="search?type=commercial&sub_type=12&installment=1">
+                                            <a href="search?type=2&sub_type=12&installment=1">
                                                 <h6 class="mb-0"><i class="fa-solid fa-building me-2"></i>Offices On
                                                     Installments</h6>
                                             </a>
@@ -142,7 +142,7 @@
                                     </div>
                                     <div class="col-lg-3 mb-3">
                                         <div class="rounded border-all p-2">
-                                            <a href="search?type=commercial&sub_type=13&size=2&unit=marla">
+                                            <a href="search?type=2&sub_type=13&size=2&unit=marla">
                                                 <h6 class="mb-0"><i class="fa-solid fa-building me-2"></i>Small Shops
                                                     For Sale</h6>
                                             </a>
@@ -150,7 +150,7 @@
                                     </div>
                                     <div class="col-lg-3 mb-3">
                                         <div class="rounded border-all p-2">
-                                            <a href="search?type=commercial&sub_type=13&installment=1">
+                                            <a href="search?type=2&sub_type=13&installment=1">
                                                 <h6 class="mb-0"><i class="fa-solid fa-building me-2"></i>Shops On
                                                     Installments</h6>
                                             </a>
@@ -158,7 +158,7 @@
                                     </div>
                                     <div class="col-lg-3 mb-3">
                                         <div class="rounded border-all p-2">
-                                            <a href="search?type=commercial&sub_type=16">
+                                            <a href="search?type=2&sub_type=16">
                                                 <h6 class="mb-0"><i class="fa-solid fa-building me-2"></i>Commercial
                                                     Buildings</h6>
                                             </a>
@@ -166,7 +166,7 @@
                                     </div>
                                     <div class="col-lg-3 mb-3">
                                         <div class="rounded border-all p-2">
-                                            <a href="search?type=commercial&sub_type=14&size=2&unit=marla">
+                                            <a href="search?type=2&sub_type=14&size=2&unit=marla">
                                                 <h6 class="mb-0"><i class="fa-solid fa-warehouse me-2"></i>Warehouse
                                                     For Sale</h6>
                                             </a>
@@ -174,7 +174,7 @@
                                     </div>
                                     <div class="col-lg-3 mb-3">
                                         <div class="rounded border-all p-2">
-                                            <a href="search?type=commercial&sub_type=14&size=2&unit=marla">
+                                            <a href="search?type=2&sub_type=14&size=2&unit=marla">
                                                 <h6 class="mb-0"><i class="fa-solid fa-industry me-2"></i>Factory
                                                     For Sale</h6>
                                             </a>
@@ -182,7 +182,7 @@
                                     </div>
                                     <div class="col-lg-3 mb-3">
                                         <div class="rounded border-all p-2">
-                                            <a href="search?type=commercial&sub_type=14&size=2&unit=marla">
+                                            <a href="search?type=2&sub_type=14&size=2&unit=marla">
                                                 <h6 class="mb-0"><i
                                                         class="fa-solid fa-location-dot me-2"></i>Commercial Plot For
                                                     Sale</h6>
