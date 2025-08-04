@@ -1,0 +1,192 @@
+/* Done By Hamza Amjad */
+/* Map CSS added */
+.map {
+    width: 100%;
+    height: 100%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/* Done By Hamza Amjad */
+/* Mapbox styles */
+.maps .dropdown {
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+}
+
+.maps .dropdown-content {
+    
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.maps .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.maps .dropdown-content a:hover { background-color: #f1f1f1; }
+.maps .dropdown:hover .dropdown-content { display: block; }
+
+.maps  .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.maps .filter-dropdown {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+/* Map styling */
+#map {
+    margin-top: 10px;
+    width: 100%;
+    height: 500px;
+    position: relative; 
+}
+
+.map-overlay {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 14px;
+    text-align: center;
+    width: 8% !important;
+}
+/* map buttons responsiveness done by Hamza Amjad */
+.map-expand{
+    margin-bottom: 5% !important;
+}
+.map-marker{
+    margin-bottom: 6% !important;
+}
+.map-all{
+    margin-bottom: 7% !important;
+}
+@media (max-width:425px){
+    .map-overlay{
+        width: 30%;
+    }
+}
+@media (max-width: 767px) {
+    .map-overlay {
+        font-size: 12px; 
+        padding: 8px;
+        width: 25% !important;
+    }
+    #fullscreen, #location-button, #show-all-markers {
+        width: 40px;
+        height: 40px; 
+        bottom: 10px;
+    }
+}
+
+.radio-buttons {
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    font-size: 14px; 
+}
+
+.radio-buttons input {
+    margin-right: 5px;
+}
+
+.radio-buttons label {
+    margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+    .radio-buttons {
+        font-size: 12px; 
+        padding: 8px; 
+        top: 5px;
+        left: 5px; 
+    }
+}
+
+#fullscreen {
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#fullscreen:hover {
+    background-color: #0056b3;
+}
+
+#location-button {
+    bottom: 50px;
+    left: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#location-button:hover {
+    background-color: #218838;
+}
+
+#show-all-markers {
+    bottom: 90px;
+    left: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #FFC107;
+    color: white;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#show-all-markers:hover {
+    background-color: #e0a800;
+}
+/* Don't remove this we will use it later, this is topNav ad-banner */
+
+/* .ad-margin-top{
+    margin-top: 5%;
+}
+@media screen and (max-width: 792px) {
+    .ad-margin-top{
+        margin-top: 20%;
+    }
+}
+@media screen and (max-width: 454px) {
+    .ad-margin-top{
+        margin-top: 30%;
+    }
+}
+@media screen and (max-width: 1018px) {
+    .ad-margin-top{
+        margin-top: 10%;
+    }
+} */

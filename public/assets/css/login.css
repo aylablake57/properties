@@ -1,0 +1,409 @@
+@import 'base.css';
+
+.bg-image {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3) 100%) , url('../images/login/modalback.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100vh;
+}
+
+.bg-image-text {
+    position: absolute;
+    bottom: 45px;
+    left: 45px;
+    font-size: 31px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 2;
+    line-height: 1.25em;
+    right: 45px;
+    width:50%;
+}
+
+.block {
+    height:100vh;
+    text-align: center;
+
+}
+
+.block::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+
+    /* For visualization
+    background: #808080; width: 5px;
+    */
+}
+
+.box-wrapper {
+    width: 90%;
+    height: 100%;
+    margin:auto;
+    background-color: var(--default);
+    box-shadow: 0 10px 31px 0 var(--shadow);
+    border-radius: 10px;
+    /* margin-top: 15%; */
+}
+
+.box-wrapper-lg {
+    width: 90%;
+    /* height:75%; */
+    overflow: visible;
+    /* margin:auto; */
+    background-color: var(--default);
+    box-shadow: 0 10px 31px 0 var(--shadow);
+    border-radius: 10px;
+    /* margin-top: 5%; */
+
+    /* display: flex;
+    justify-content: center; */
+    /* position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto; */
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.login-form {
+    border: 0px solid #e5e5e5;
+    width: 100%;
+    border-radius: 4px;
+    padding: 45px;
+    text-align: left;
+}
+
+.login-form .title {
+    padding: 0px 0px 30px 0px;
+    color: #222;
+    font-size: 23px;
+    line-height: 1.3em;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.login-form .form-control,
+.login-form .input-group-text,
+.login-form .form-select{
+    padding: 10px 15px;
+    color: #5c727d;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
+    /* height: 40px; */
+    /* font-size: 14px; */
+    /* line-height: 1.4; */
+    vertical-align: middle;
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    margin-bottom: 10px;
+}
+.login-form .form-check {
+    padding: 10px 15px;
+    color: #5c727d;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.login-form .btnLogin {
+    text-shadow: none;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    padding: 5px 34px;
+    border: 1px solid;
+    line-height: 28px;
+    border-color: var(--accent);
+    color: var(--default);
+    font-size: 14px;
+    font-weight: 500;
+    background-color: var(--accent);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, var(--accent)));
+    background-image: linear-gradient(to right, transparent 50%, var(--accent) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Retry attempt styling */
+.btn-disabled{
+    background-color: var(--secondary) !important;
+    color: var(--accent) !important;
+    text-decoration: none !important;
+    background-position: left bottom !important;
+    border-color: var(--accent) !important;
+    transition: all 300ms ease !important;
+    -webkit-transition: all 300ms ease !important;
+    -o-transition: all 300ms ease !important;
+    cursor: pointer;
+}
+
+.otp-retry-alert{
+    border-color: #dc3545 !important;
+}
+
+.links-wrapper {
+    margin: 5px auto;
+    margin-bottom: 10px;;
+    color: #333;
+    width: 100%;
+    float: left;
+    font-size: 14px;
+}
+
+.links-wrapper a {
+    float: left;
+    font-weight: 500;
+    color: #222;
+    transition: color 0.4s linear;
+    -moz-transition: color 0.4s linear;
+    -webkit-transition: color 0.4s linear;
+    -o-transition: color 0.4s linear;
+}
+
+/* new css is added here */
+
+.text-content, .form-container, .how-it-works, .selling-tips, .faqs {
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.text-content h2, .how-it-works h2, .selling-tips h2, .faqs h2 {
+    padding: 40px 0px 30px 0px;
+    color: #222;
+    font-size: 23px;
+    line-height: 1.3em;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.text-content .highlight {
+    color: green;
+}
+
+.text-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.text-content li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 30px; /* Add space for the bullet */
+}
+
+.text-content li::before {
+    content: "\2713"; /* Unicode character for checkmark */
+    color: var(--accent); /* Green color */
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem; /* Size of the checkmark */
+}
+
+.text-content img {
+    margin-top: -10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.form-container .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* How it Works Section */
+.how-it-works-container {
+    padding: 20px 120px;
+    background-color: #f8f9fa;
+}
+
+.how-it-works h2 {
+    margin-bottom: -10px;
+}
+
+.steps {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    padding: 10px 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.step {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    min-width: 300px;
+    scroll-snap-align: start;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s;
+}
+
+.step img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.step p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.step:hover {
+    transform: scale(1.02);
+}
+
+/* Selling Tips Section */
+
+.selling-tips h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.selling-tips h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: var(--accent);;
+    display: flex;
+    align-items: center;
+}
+
+.selling-tips h3 i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: var(--accent);
+}
+
+.selling-tips p {
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+.selling-tips p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* FAQs Section */
+/* .faqs-container {
+    background-color: #ffffff;
+}
+
+.faqs h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.faqs h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: green;
+}
+
+.faqs p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.faqs p:last-of-type {
+    margin-bottom: 0;
+} */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content-container, .how-it-works-container, .selling-tips-container, .faqs-container {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .text-content, .form-container, .how-it-works, .selling-tips, .faqs {
+        width: 100%;
+    }
+
+    .steps {
+        flex-direction: column;
+        overflow-x: visible;
+    }
+
+    .step img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .selling-tips h3 i, .faqs h3 i {
+        font-size: 20px;
+    }
+}

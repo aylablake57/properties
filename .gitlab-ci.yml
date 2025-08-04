@@ -1,0 +1,44 @@
+stages:
+  - Deploy
+  - Restart Webserver
+
+variables:
+  PROJECT_DIR: /var/www/properties
+  SCRIPTS_DIR: /scripts
+  DEVELOPMENT_SERVER: 172.16.0.17
+  USER: root
+  DEVELOPMENT_SSH_KEY: $Dev_Server_SSH
+
+before_script:
+  - git config --global url."http://172.16.0.17:5050/git".insteadOf "http://110.93.206.163:5050/git"
+  - eval $(ssh-agent -s)
+  - echo "$DEVELOPMENT_SSH_KEY" | sed 's/\\n/\n/g' > /tmp/gitlab_dev_ssh_key  # Better handling of escaped newlines
+  - chmod 600 /tmp/gitlab_dev_ssh_key
+  - ssh-add /tmp/gitlab_dev_ssh_key
+
+#----------------------------------------------------------------------------------------------------#
+#------------------------------------------DEPLOY SCRIPTS-------------------------------------------#
+#----------------------------------------------------------------------------------------------------#
+
+#############-----------------------------DEVELOPMENT SERVER-----------------------------#############
+
+Development Server:
+  stage: Deploy
+  tags:
+    - development
+  script:
+    - echo "Deploying to Development server..."
+    # Sync project files to server
+    - rsync -avzq  -e "ssh -p 2786" --delete $CI_PROJECT_DIR/ $USER@$DEVELOPMENT_SERVER:$PROJECT_DIR
+    # Move .env file to the project directory on the server
+    - ssh -p 2786 $USER@$DEVELOPMENT_SERVER "cp /var/www/properties_env/.env $PROJECT_DIR/."
+    - echo "Copied .env file to the project directory."
+    # Moving vendors and node_modules folders
+    - ssh -p 2786 $USER@$DEVELOPMENT_SERVER "bash $SCRIPTS_DIR/code_permissions.sh"
+    # Run deployment script on the server
+    - echo "Restarting Apache..."
+    - ssh -p 2786 $USER@$DEVELOPMENT_SERVER "bash $SCRIPTS_DIR/restart_webserver.sh"
+   # - ssh -p 2786 $USER@$DEVELOPMENT_SERVER "bash $SCRIPTS_DIR/test.sh"
+  when: manual
+  only:
+    -  main

@@ -1,0 +1,90 @@
+/* Base styles for the custom navbar */
+.custom-image-sale-navbar {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0.5rem;
+    position: absolute;
+    left: 0;
+    top: 12%;
+    background: whitesmoke;
+    border-radius: 0 10px 10px 0 ;
+    transform: translateY(-50%);
+    z-index: 2; 
+}
+.custom-image-sale-navbar a {
+    color: black;
+    margin: 0 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.custom-image-sale-navbar a:hover {
+    color: #a0af50;
+}
+.custom-image-sale-navbar .nav-image-sale-link.active {
+    color: #a0af50;
+    background-color: white;
+}
+.custom-image-sale-navbar .nav-image-sale-link span {
+    display: none;
+    margin-left: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.custom-image-sale-navbar .nav-image-sale-link.show span {
+    display: inline;
+    opacity: 1;
+}
+
+/* Styles for small screens below 766px */
+@media (max-width: 766px) {
+    .custom-image-sale-navbar {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0.5rem;
+        position: absolute;
+        left: 0;
+        top: 4%;
+        background: whitesmoke;
+        border-radius: 0 10px 10px 0;
+        transform: translateY(-50%);
+        z-index: 10; 
+    }
+    
+    .custom-image-sale-navbar .nav-image-sale-link {
+        margin: 0.5rem 0;
+        width: 50px; 
+        text-align: center;
+    }
+    .custom-image-sale-navbar .nav-image-sale-link span {
+        display: none !important;
+    }
+    .custom-image-sale-navbar .nav-image-sale-link i {
+        font-size: 1.0rem;
+    }
+}
+
+.swiper {
+    display: none; 
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img, 
+.swiper-slide video, 
+.swiper-slide #view-map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* Make sure the map container fits well */
+#view-map{
+    width: 100%;
+    height: 100%; 
+}

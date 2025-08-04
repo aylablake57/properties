@@ -1,0 +1,29 @@
+/* IFrame added by Hamza Amjad */
+.iframe-container .iframe {
+    display: none;
+    width: 100%;
+}
+
+/* Large Screen */
+@media screen and (min-width: 1200px) {
+    .iframe-large {
+        display: block !important;
+        height: 350px;
+    }
+}
+
+/* Medium Screen */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .iframe-medium {
+        display: block !important;
+        height: 600px;
+    }
+}
+
+/* Small Screen */
+@media screen and (max-width: 767px) {
+    .iframe-small {
+        display: block !important;
+        height: 1080px;
+    }
+}

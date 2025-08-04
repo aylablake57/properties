@@ -1,0 +1,341 @@
+/* New css code file added by Yousaf */
+.agent-card, .card-carousel {
+    border-radius: .25rem;
+    padding: 1.25rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    /* margin-top:-100px;  */
+    border:none;
+}
+
+.agent-img {
+    max-width: 200px;
+    height: 200px;
+    z-index: 1;
+    border-radius: 50% !important;
+    border-radius: .25rem;
+
+    border-style: solid;
+    border-width: 0.125rem;
+    border-color: #E5E3E8;
+    background: var(--primary);
+}
+.agent-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.carousel-inner {
+    display: flex;
+}
+.carousel-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5);
+    background-size: 50%, 50%;
+}
+.carousel-control-prev {
+    left: 0;
+}
+.carousel-control-next {
+    right: 0;
+}
+.card-carousel {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    margin-right: 15px;
+}
+.loader-section {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+.loader-content {
+    display: none; /* Hidden initially */
+    padding: 2rem;
+    border-radius: .25rem;
+    background-color: rgb(238, 238, 238);
+}
+.sales-data {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem; /* Ensures spacing between items */
+}
+.sales-item {
+    flex: 1 1 calc(25% - 1rem); /* 4 items in a row with gap */
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: .25rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+.sales-item h4 {
+    margin-bottom: 0.5rem;
+}
+.sales-item p.number {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    color:  var(--accent);;
+}
+
+/* review section css */
+.review-form {
+    margin-top: 2rem;
+}
+
+.review-column, .review-form-column {
+    border-radius: .25rem;
+    padding: 1.25rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-form input, .review-form textarea, .review-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.review-form button {
+    background-color: var(--accent);;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.review-form button:hover {
+    background-color: #0056b3;
+}
+.review-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.review-item:last-of-type {
+    border-bottom: none;
+}
+.review-rating {
+    font-size: 0.7rem;
+}
+.review-comments {
+    margin: 5px 0;
+    text-align: left;
+}
+.reviewer-name {
+    font-weight: bold;
+    color: black;
+}
+h2{
+    color: black; 
+}
+.achievement-card h5 {
+    color: #000;
+}
+.blog-post-item h5 {
+    color: #000;
+}
+
+/* property agent styling */
+.agent-profile-card {
+    align-items: center;
+    overflow: hidden;
+    border-radius: .25rem;
+    padding: 1.25rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.agent-profile-image-wrapper {
+    position: relative;
+    width: 120px; 
+    height: 120px; 
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+.agent-profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.agent-profile-tag {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #a0af50;
+    color: #fff;
+    padding: 5px 10px;
+    border-top-right-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.agent-profile-details {
+    flex: 1;
+    padding: 0 10px; 
+}
+
+.agent-profile-name {
+    font-size: 20px; 
+    font-weight: bold;
+    margin: 0;
+}
+
+.agent-profile-listings {
+    font-size: 16px; 
+    color: #666;
+}
+
+.agent-profile-location {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.agent-profile-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.agent-profile-actions .btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+/* Custom Header Picture Section Styles */
+.header-picture-section {
+    position: relative;
+    width: 100%;
+    height: 40vh; /* Adjust height as needed */
+    margin-bottom: 30px; /* Space below the picture section */
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.header-picture-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.header-picture-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
+}
+
+/* Ensure equal height for both columns */
+.row-equal-height {
+    display: flex;
+}
+
+.row-equal-height > .col-lg-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-white, .bg-gredient {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Optional: Add padding to the Contact container */
+.contact-container1 {
+    height: 100%;
+}
+
+/* Optional: Ensure containers have some spacing inside */
+.container {
+    padding: 0 15px;
+}
+.agent-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background: #fff;
+}
+/* Custom margin for spacing between columns */
+.me-lg-3 {
+    margin-right: 1.5rem; /* Adjust as needed */
+}
+
+.ms-lg-3 {
+    margin-left: 1.5rem; /* Adjust as needed */
+}
+
+/* Ensure columns do not break onto new lines on small screens */
+@media (max-width: 768px) {
+    .me-lg-3, .ms-lg-3 {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+/* new css added by Yousaf for stars */
+.checked {
+    color: orange;
+  }
+
+  .star-rating {
+    direction: rtl;
+    display: inline-flex;
+    font-size: 24px;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: #ddd;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 24px;
+    margin: 0;
+}
+
+.star-rating input:checked ~ label {
+    color: orange;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: orange;
+}

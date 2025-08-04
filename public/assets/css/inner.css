@@ -1,0 +1,1000 @@
+header {
+    background-color:#fff;
+    opacity:0.95;
+    box-shadow: 3px 1px 20px 0 var(--shadow);
+}
+
+.search-results a {
+    color: var(--text-medium);
+    text-transform: none;
+    border: none;
+    width: auto;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.page-item.active .page-link {
+    background-color: var(--text-dark);
+    border-color: var(--text-dark);
+}
+
+.offcanvas-header h5 {
+    letter-spacing: 0;
+    font-size: 15px;
+    line-height: 1.3;
+    padding: 0;
+    position: relative;
+    text-transform: none;
+    cursor: pointer;
+    color: #221f20;
+}
+
+/* .form-check-input:checked {
+    background-color: var(--accent);
+    border-color: var(--accent);
+} */
+
+.ads-container h4 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.sub-title h4 {
+    color: var(--text-dark);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1em;
+    letter-spacing: -0.3px;
+    font-family: var(--primary-font-family);
+}
+
+.accordion-item {
+    border-radius: 0px !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.accordion-header {
+    border-radius: 0px !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.accordion-button {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-dark) !important;
+    background-color: var(--default) !important;
+    box-shadow: none !important;
+    height: 75px;
+}
+/* Particle.js added by Hamza Amjad */
+#particles-js{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+}
+/* adding gsap hover effect in about us column done by Hamza Amjad */
+.hover-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1; 
+}
+.column-container h4, .column-container p {
+    position: relative;
+    z-index: 20;
+}
+.title-about-card-container{
+    position: relative;
+    z-index: 20;
+}
+.container-part-about{
+    height: 40vh;
+    margin-top: 5.8rem !important;
+}
+/* Responsivness for small screen about us contact page done by Hamza Amjad. */
+@media screen and (max-width:426px) {
+    .container-part-about,.inner-banner{
+        height:34vh !important;
+    }
+}
+@media(max-width:584px) {
+    .contact-us-image{
+        height: 100% !important;
+    }
+}
+.about-us-image, .contact-us-image{
+    height: 60%;
+}
+.accordion-button.collapsed {
+    color: var(--text-dark) !important;
+}
+.commitment-row-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
+}
+.commitment-row-card-content{
+    height: 100%;
+}
+.commitment-row-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.stats span {
+    color: var(--accent);
+    font-family: "Roboto", Sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1em;
+}
+
+.stats p {
+    color: var(--text-dark);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--primary-font-family);
+}
+
+.contact-wrapper {
+    background-color: var(--default);
+    box-shadow: 0px 5px 65px 0px rgba(36, 42.000000000000014, 76, 0.1);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    /* margin-top: -120px; */
+    margin-bottom: 0px;
+}
+
+.bg-image {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) 56%), url(../images/contact/1.jpeg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inner-banner {
+    margin-top: 5.8rem !important;
+    padding-top: 5rem;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) 56%), url(../images/agents/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.map-contact {
+    /* position: absolute; */
+    top: 50%;
+    margin-top: -205px;
+    left: 50%;
+    min-width: 20%;
+    width: 350px;
+    margin-left: -515px;
+    padding: 25px;
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 44px 98px 0 rgba(0, 0, 0, .1);
+    overflow: hidden;
+    z-index: 10;
+}
+
+.map-contact h4 {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 20px;
+    color: var(--text-dark);
+}
+
+.map-contact .contact-detail {
+    margin: 0 0 5px !important;
+    padding-left: 0 !important;
+    font-size: 14px;
+    line-height: 1.9em;
+    color: #222;
+}
+
+.map-contact .contact-detail i {
+    margin-right: 10px;
+}
+
+.map-contact .contact-detail a {
+    color: #222;
+    transition: color .4s linear;
+    -moz-transition: color .4s linear;
+    -webkit-transition: color .4s linear;
+    -o-transition: color .4s linear;
+}
+
+.latest-properties ul {
+    list-style: none !important;
+    padding-left: 0px !important;
+}
+
+.widget-title {
+    font-size: 16px;
+    color: var(--text-dark);
+    line-height: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.latest-internal {
+    margin-bottom: 13px;
+    width: 100%;
+    height: auto;
+    min-height: 70px;
+}
+
+.latest-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    width: 105px;
+    height: 70px;
+    float: left;
+}
+
+.latest-image a {
+    color:  var(--text-dark);
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    border: none;
+    line-height: 22px;
+    font-weight: normal;
+    font-size: 14px;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.latest-image img {
+    transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    vertical-align: top;
+    float: left;
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    object-fit: cover;
+}
+
+.listing-name {
+    display: inline;
+    margin-left: 0px;
+    float: left;
+    line-height: 20px;
+    position: relative;
+    width: 60%;
+    padding-left: 13px;
+}
+
+.listing-name .title {
+    color:  var(--text-dark);
+}
+
+.listing-name .title a {
+    font-weight: 500;
+    color:  var(--text-dark);
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    border: none;
+    font-size: 14px;
+    line-height: 1.3em !important;
+}
+
+.listing-name .price {
+    color: var(--accent);
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.explore .nav-link {
+    color: var(--text-dark);
+}
+
+.explore .nav-link.active {
+    background-color: var(--accent) !important;
+}
+
+.explore .panel ul {
+    list-style-type: square;
+    margin: 20px 0px 26px 26px;
+}
+
+.explore .panel ul li {
+    margin-bottom: 10px;
+}
+
+.explore .panel ul li a {
+    color: #5C727D;
+}
+
+/* Swiper for media gallery */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper2 {
+    height: 80%;
+    width: 100%;
+}
+
+.mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#property-nav {
+    position: fixed;
+    left: 10px;
+    margin-top: 160px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    z-index: 10;
+    line-height: 18px;
+    width: 160px;
+    font-size: 14px;
+    background-color: var(--text-dark);
+    box-shadow: 3px 1px 20px 0 var(--shadow);
+    height: 300px;
+}
+
+#property-nav a {
+    color: var(--default);
+}
+
+#property-nav .nav-pills .nav-item {
+    width: 100%;
+    text-align: center;
+}
+
+#property-nav .nav-pills .nav-link {
+    border: 1px solid var(--text-dark);
+}
+#property-nav .nav-pills .nav-link.active {
+    background-color: var(--text-dark);
+    border: 1px solid var(--accent) !important;
+}
+
+.profile-details h6 {
+    color: var(--text-dark);
+}
+
+.profile-details span {
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+@media screen and (max-width: 520px) {
+    .star {
+        display: flex;
+    }
+}
+/* Added for resposniveness by Hamza Amjad */
+@media screen and (min-width: 992px)and (max-width: 1129px) {
+    .scrollspy-example{
+        margin-left: 15%;
+    }
+    .seller-detail-list-table td{ 
+        padding-left: 0;
+    }
+}
+@media screen and (min-width: 1130px) and (max-width: 1199px) {
+    .scrollspy-example{
+        margin-left: 7%;
+    }
+}@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    .scrollspy-example{
+        margin-left: 12%;
+    }
+}
+.profile-details a {
+    color: var(--text-dark);
+    text-decoration: underline;
+}
+
+.agent-card:hover .profile-image {
+    border-color: var(--accent) !important;
+}
+
+/* Area converter */
+
+.toggle-button {
+    background-color: var(--default);
+    border-radius: 0.375rem !important;
+    border: 1px solid var(--text-dark);
+    color:var(--text-dark);
+    padding-left: 1rem !important;
+    padding-bottom: .5rem !important;
+    padding-right: 1rem !important;
+    padding-top: .5rem !important;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.toggle-button:hover {
+    border: 1px solid var(--accent);
+    background-color: var(--accent);
+    color: var(--default);
+}
+
+.toggle-button.active-cal-area {
+    border: 1px solid var(--accent);
+    background-color: var(--accent);
+    color: var(--default);
+}
+
+.active>.page-link, .page-link.active {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+.page-link:hover {
+    z-index: 2;
+    color: var(--accent);
+}
+
+.page-link {
+    color: var(--accent);
+}
+
+.vendor-box {
+    min-height: 210px;
+}
+
+.featured-agents {
+    background-color: var(--accent);
+}
+
+
+/* about page extra css */
+
+.nav-tabs {
+    border-right: 1px solid #dee2e6;
+}
+.nav-tabs .nav-item {
+    margin-bottom: 0.5rem;
+}
+.nav-tabs .nav-link {
+    border-radius: 0.375rem;
+    padding: 0.75rem 1.25rem;
+    color: black; /* Default text color for tabs */
+    background-color: white; /* Default background color for tabs */
+    font-weight: 600;
+    border: 1px solid #dee2e6;
+}
+.nav-tabs .nav-link.active {
+    color: white; /* Text color when tab is active */
+    background-color: #a0af50; /* Background color when tab is active */
+    border-color: #a0af50; /* Border color when tab is active */
+}
+.tab-content {
+    padding-left: 1.5rem;
+    z-index: 10;
+}
+/* Addon Stylling Replaced with new one adjust height on all pages, Done by Hamza Amjad */
+.input-group .input-group-text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+}
+
+.input-group .form-control {
+    height: auto;
+    line-height: 1.5;
+}
+
+/* Done By Hamza Amjad */
+/* bi-chart css */
+.embed-responsive {
+    position: relative;
+    width: 100%;
+    height: 510px;
+    padding-bottom: 56.25%;
+}
+
+.embed-responsive-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Done By Hamza Amjad */
+/* Properties summary */
+.properties-summary-card {
+    background-color: #000;
+    color: white;
+}
+
+.properties-summary-highlight {
+    background-color: #1a1a1a;
+}
+
+.bg-a6a6a6 {
+    background-color: #a6a6a6 !important;
+}
+
+
+@media (max-width: 768px) {
+    .properties-summary-card {
+        padding: 2rem;
+    }
+}
+/* Done By Hamza Amjad */
+/* Right vertical scroller added so that the image wil not go out */
+#search-results {
+    min-height: 300px;
+}
+.ads-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.ads-profile-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.Advertisement-ad-images-wrapper {
+    flex-grow: 1;
+    max-height: 100%; 
+    overflow-y: auto; 
+}
+.Advertisement-profile-ad-images-wrapper {
+    flex-grow: 1;
+    max-height: 100%; 
+    overflow-y: auto; 
+}
+
+/* Add custom scrollbar styles */
+.Advertisement-profile-ad-images-wrapper::-webkit-scrollbar {
+    width: 8px;
+}
+
+.Advertisement-profile-ad-images-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.Advertisement-profile-ad-images-wrapper::-webkit-scrollbar-thumb {
+    background: #a0af50;
+}
+
+.Advertisement-profile-ad-images-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+/* Don't remove this we will use it later, this is topNav ad-banner */
+
+/* .ad-margin-top{
+    margin-top: 10%;
+}
+@media screen and (max-width: 792px) {
+    .ad-margin-top{
+        margin-top: 20%;
+    }
+}
+@media screen and (max-width: 454px) {
+    .ad-margin-top{
+        margin-top: 30%;
+    }
+} */
+
+
+/* Bubble animation added by Hamza Amjad */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    opacity: 0.8;
+    animation: float 6s infinite ease-in-out;
+    z-index: 0;
+}
+
+/* Left side bubbles */
+.bubble-left-1 {
+    width: 40px;
+    height: 40px;
+    top: 20%;
+    left: 10%;
+    animation-duration: 5s;
+    animation-delay: 0s;
+}
+
+.bubble-left-2 {
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 5%;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+.bubble-left-3 {
+    width: 50px;
+    height: 50px;
+    top: 70%; 
+    left: 15%;
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+
+/* Right side bubbles */
+.bubble-right-1 {
+    width: 30px;
+    height: 30px;
+    top: 30%;
+    right: 10%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.bubble-right-2 {
+    width: 40px;
+    height: 40px;
+    top: 60%;
+    right: 15%;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+/* filter button properties | sort button responsiveness did by Hamza Amjad*/
+@media  (max-width: 575px) {
+    .center-icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+/* search box added by Hamza Amjad */
+.search-box-index .search-box-index-text {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    display: flex;
+    align-items: center; 
+    height: auto; 
+}
+.search-box-index-text{
+    color: #5C727D;
+}
+
+/* General button styling added by Hamza Amjad in search-block */
+.btn-sha {
+    color: #fff;
+    box-shadow: none;
+    text-align: center; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; 
+    width: 15% !important;
+    height: 35px;
+}
+.btn-a{
+    border-radius: 2px 0 0 2px;
+}
+
+.btn-b{
+    border-radius: 0 2px 2px 0;
+}
+/* Active state styling */
+.btn-sha.active {
+    box-shadow: 0 0 0 1px #a0af50; 
+    background-color: #ffffff !important; 
+    color: #a0af50;
+}
+
+/* Inactive state styling */
+.btn-sha:not(.active) {
+    box-shadow: none;
+}
+
+.btn-sha + .btn-sha {
+    margin-left: 0;
+}
+.row > .col-md-2:first-child .btn-sha {
+    margin-left: 0;
+}
+
+@media (max-width: 1200px) {
+    
+    .btn-sha {
+        width: 50% !important;
+    }
+    .bubble{
+        display: none;
+    }
+    #cityDropdownBox #agentNameSearchBox{
+        width: 100% !important;
+    }
+    .agent-profile-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .agent-profile-image-wrapper {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .agent-profile-details {
+        text-align: center;
+    }  
+    .name_star{
+        justify-content: center !important;
+        align-items: center;
+    }
+}
+.name_star{
+    justify-content: space-between;
+}
+/* property agent styling added by Hamza Amjad */
+.agent-profile-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 15px; 
+}
+
+.agent-profile-image-wrapper {
+    position: relative;
+    width: 120px; 
+    height: 120px; 
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+.agent-profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.agent-profile-tag {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #a0af50;
+    color: #fff;
+    padding: 5px 10px;
+    border-top-right-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.agent-profile-details {
+    flex: 1;
+    padding: 0 10px; 
+}
+
+.agent-profile-name {
+    font-size: 20px; 
+    font-weight: bold;
+    margin: 0;
+}
+
+.agent-profile-listings {
+    font-size: 16px; 
+    color: #666;
+}
+
+.agent-profile-location {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.agent-profile-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.agent-profile-actions .btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+/* area counter css added by Hamza Amjad */
+.active-cal-area {
+    background-color: #a0af50;
+    color: white;
+    border: 1px solid transparent;
+}
+.area-input-form-control {
+    border-radius: 10px;
+    border: 2px solid #a6a6a6;
+}
+
+.area-input-form-control:focus {
+    border-color: #a0af50;
+    box-shadow: 0 0 5px rgba(160, 175, 80, 0.5);
+}
+
+.area-select-form-control {
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #a6a6a6;
+}
+
+.area-select-form-control:focus {
+    border-color: #a0af50;
+    box-shadow: 0 0 5px rgba(160, 175, 80, 0.5);
+}
+.converter-left-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.converter-left-container .form-label {
+    margin-bottom: 20px;
+}
+
+.converter-center-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.converter-right-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Css added by Asim */
+.styled-subheading{
+    color: #888 !important;
+    font-size:30px;
+}
+
+.standout-text{
+    color: #a0af50 !important;
+}
+
+.icon-list {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;           /* Remove default padding */
+}
+
+.icon-list li {
+    background: url('/assets/images/icons/tick.png') no-repeat left center; /* Replace with your icon path */
+    padding-left: 25px;  /* Space to the left of the text for the icon */
+    margin-bottom: 5px;
+}
+
+#border-spawn-col{
+    border-color: #a0af50 !important;
+}
+
+@media (max-width: 767px) {
+    .converter-container {
+        flex-direction: column;
+    }
+}
+.converter-container {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}

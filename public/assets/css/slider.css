@@ -1,0 +1,422 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    /* text-align: left; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide .card {
+    width:310px;
+    /* box-shadow: 0 10px 31px 0 var(--shadow) !important; */
+    border-radius: 4px !important;
+    border: 1px solid #f1f8ff !important;
+    color: #5C727D;
+    background-color: #ffffff;
+    /* max-width: 525px; */
+    transition: 0.3s ease-out;
+    font-size: 13px;
+}
+
+.swiper-slide .card-body {
+    padding-top: 20px;
+}
+
+
+.featured-gradient {
+    box-shadow: 0 10px 31px 0 var(--shadow) !important;
+    background: #08080848;
+    opacity: 1;
+    border-radius: 4px 4px 4px 4px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: 20px;
+    padding: 0px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    width: 100%;
+    height: 50px;
+}
+
+.featured-div {
+    max-width: 85px;
+    float: left;
+    background-color: rgb(248, 4, 4);
+    color: #fff;
+    position: relative;
+    font-size: 11px;
+    padding: 0px 10px;
+    line-height: 20px;
+    background-image: none !important;
+    margin-bottom: 4px;
+    top: 20px;
+    z-index: 100;
+}
+.seen-div{
+    float: right;
+    background-color: #4682B4;
+    color: #fff;
+    position: relative;
+    font-size: 11px;
+    padding: 0px 10px;
+    line-height: 20px;
+    background-image: none !important;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    top: 20px;
+    z-index: 100;
+}
+.new-div{
+    float: right;
+    background-color: #FFD700;
+    color: #000;
+    position: relative;
+    font-size: 11px;
+    padding: 0px 10px;
+    line-height: 20px;
+    background-image: none !important;
+    margin-bottom: 4px;
+    top: 20px;
+    z-index: 100;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--default) !important;
+    background-color: var(--accent);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    position: relative !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px !important;
+    font-weight: bold;
+    box-shadow: 0 10px 31px 0 var(--shadow) !important;
+}
+/* In Home page Logo animation added by Hamza Amjad */
+.flip-logo-container {
+    display: flex;
+    overflow-x: auto; 
+    perspective: 1000px; 
+    width: 100%;
+    padding: 20px;
+}
+
+.logo-itemss {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    position: relative;
+    transform-style: preserve-3d; 
+}
+
+.logo-itemss img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.logo-itemss .front, .logo-itemss .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden; 
+}
+
+.logo-itemss .back {
+    background: linear-gradient(135deg, #a0af50, #5c727d);
+    transform: rotateY(180deg);
+    color: white; 
+    font-family: Arial, sans-serif; 
+    text-align: center;
+}
+@media (max-width: 467px) {
+    .row {
+        justify-content: center;
+    }
+    .flip-logo-container {
+        padding: 1%; 
+    }
+
+    .logo-itemss {
+        width: 100px; 
+        height: 100px;
+        margin: 10px;
+    }
+
+    .logo-itemss img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .logo-itemss .back {
+        text-align: center;
+    }
+}
+/* Advertisement modal image css added by Hamza Amjad */
+.modal-image-wrapper {
+    width: 100%; 
+    overflow: hidden;
+}
+
+#modal-ad-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+/* Testimonial css added by Hamza Amjad */
+.testimonial-container {
+    width: 100%;
+    padding-bottom: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem;
+    max-height: 560px; /* Limit the grid height */
+    /* overflow-x: hidden; Enable vertical scrolling */
+    /* scroll-snap-type: x mandatory; Snap on vertical scrolling */
+}
+
+.testimonial-card {
+    position: relative;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 5px 5px 20px rgba(109, 109, 109, 0.4);
+    color: white;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    min-width: 15rem;
+}
+.icon-comma {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    font-size: 50px !important; 
+    color: white; 
+    opacity: 20%;
+}
+
+.testimonial-card:nth-child(1) {
+    background: #a0af50;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-repeat: no-repeat;
+    background-position-x: 25rem;
+}
+
+/* Additional card styles */
+.testimonial-card:nth-child(2) {
+    background: #49556B;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.testimonial-card:nth-child(3) {
+    background: #ababab;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    color: black;
+}
+
+.testimonial-card:nth-child(4) {
+    background: #545454;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: black;
+}
+
+.testimonial-card:nth-child(5) {
+    background: #18202D;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+/* User details styling */
+.user-details {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.user-image {
+    margin-right: 1rem;
+}
+
+.user-image img {
+    border-radius: 50%;
+    width: 2rem;
+    border: 2px solid #cec5c5;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-name {
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+}
+
+.user-role {
+    color: white;
+    opacity: 80%;
+    font-size: 0.8rem;
+}
+
+/* Review content */
+.user-review h4 {
+    font-size: 1.0rem;
+    color: white;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+
+.user-review p {
+    font-size: 0.95rem;
+    color: white;
+    font-weight: 500;
+    opacity: 50%;
+    line-height: 1.5;
+}
+
+/* Scrollbar styling */
+.testimonial-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.testimonial-grid::-webkit-scrollbar-thumb {
+    background-color: #a0af50;
+    border-radius: 4px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 523px){
+    .testimonial-container{
+        padding-bottom: 100vh !important;
+    }
+}
+@media screen and (max-width: 356px){
+    .testimonial-container{
+        padding-bottom: 120vh !important;
+    }
+}
+@media screen and (max-width: 319px){
+    .testimonial-container{
+        padding-bottom: 150vh !important;
+    }
+}
+@media screen and (max-width: 846px) {
+    .testimonial-container{
+        padding-bottom: 70vh;
+    }
+    .testimonial-grid {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr; 
+        gap: 0.5rem; 
+        padding: 0.5rem; 
+    }
+
+    .testimonial-card {
+        grid-column: span 1;
+        background-position-x: center;
+        max-width: 100%; 
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .testimonial-grid {
+        grid-template-columns: repeat(1, 300px);
+        gap: 10px;
+        padding: 1rem;
+    }
+
+    .testimonial-card {
+        grid-column: span 1; 
+        background-position-x: center;
+        max-width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    .testimonial-card:nth-child(3),
+    .testimonial-card:nth-child(5) {
+        grid-column: span 2;
+    }
+} 
+/* Star rating added by Hamza Amjad */
+.star-rating {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+    color: white;
+}
+
+.star {
+    font-size: 24px;
+     
+}
+
+.star.filled {
+    color: #FFD700; 
+}
+
+/* Hide full stars and show single star on small screens */
+@media (max-width: 767px) {
+    .stars {
+        display: none; /* Hide the full stars */
+    }
+
+    .single-star {
+        display: flex; /* Show single star */
+        align-items: center; 
+    }
+
+    .single-star .rating {
+        margin-left: 5px;
+        font-size: 20px; 
+    }
+}
+
+/* Show full stars and hide single star on larger screens */
+@media (min-width: 768px) {
+    .single-star {
+        display: none;
+    }
+}

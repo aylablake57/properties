@@ -1,0 +1,53 @@
+body {
+    background-color: #fff; /*  #722d65;
+    background-image: linear-gradient(180deg, #722d65,10%, #722d6510 100%); */
+    /* background-size: cover; */
+}
+
+.bg-gradient-primary {
+    background-color: #000000 !important;
+    background-image: linear-gradient(180deg, #000000 10%, #000000 100%) !important;
+}
+
+.bg-secondary {
+    background-color: black !important;
+    height: 100vh;
+}
+
+.logo_company {
+    width: 250px;
+    height: auto;
+}
+
+.btn-accent {
+    background-color: black;
+    color: #fff;
+    padding: 10px 30px !important;
+    border-radius: 5px !important;
+    font-size: 14px;
+    border:none;
+    transition: all ease .5s;
+}
+
+.btn-accent:hover {
+    background-color: #1a1b1b;
+    color: white;
+}
+
+.btn-purple {
+    color: #fff;
+    background-color: #722d65;
+    border-color: #722d65;
+}
+
+.btn-purple:hover {
+    color: #fff;
+    background-color: #86457a;
+    border-color: #86457a;
+}
+
+@media (max-width: 990px){
+    .view-on-mobile {
+        display: none !important;
+    }
+}

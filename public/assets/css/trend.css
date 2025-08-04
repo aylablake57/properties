@@ -1,0 +1,460 @@
+/* Header CSS */
+.trend-header {
+    height: 50vh;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.925); /* Fallback background color */
+  }
+  .header-container-trend-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 8%;
+}
+  .header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6; /* Make the image slightly transparent */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* width: 100%;
+    height: 100%; */
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay for better text visibility */
+  }
+  .card{
+    width: 100%;
+    background: white;
+  }
+  .header-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .header-subtitle {
+    font-size: 1.1rem;
+    color: #e3e4e6;
+  }
+  
+  @media (max-width: 768px) {
+    .form-label{
+    color: black !important;
+    }
+    .header-row{
+        margin-top: 40%;
+      }
+    .header-title {
+      font-size: 2rem;
+    }
+    .header-subtitle {
+      font-size: 1rem;
+    }
+    .recent-searches{
+        margin-top: 10%;
+    }
+    .watermark-image{
+      overflow: hidden;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .header-row{
+        margin-top: 70%;
+      }
+      .recent-searches{
+        margin-top: 40%;
+    }
+    .trend-city-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center; 
+      min-height: 220px;
+      padding: 20px;
+    }
+  
+    .trend-city-image {
+      margin-bottom: 10px; 
+      margin-left: 0 !important;
+    }
+    .watermark-image{
+      display: none !important;
+    }
+    .trend-city-image img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .trend-city-info {
+      padding: 0; 
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    
+      .recent-searches{
+        margin-top: 60%;
+    }
+  }
+  .btn-group{
+    width: 40%;
+    margin-bottom: 5%;
+  }
+.btn-group .btn.active {
+    opacity: 1; /* Fully visible */
+}
+
+.btn-group .btn:not(.active) {
+    color: white;
+    border-color: white;
+    background: rgba(0, 0, 0, 0.3);
+}
+/* Header CSS end*/
+
+
+/* Recent Searches */
+.recent-searches {
+    background-color: #f8f9fa;
+}
+.recent-searches-container{
+  margin-top: 7%;
+}
+.slider-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-slider {
+    display: flex;
+    transition: transform 0.3s ease;
+    scroll-behavior: smooth;
+    overflow-x: auto; 
+}
+
+.custom-card {
+    min-width: 230px; 
+    margin: 0 10px; 
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.custom-card:hover {
+    border: 0.5px solid #a0af50;
+}
+
+.custom-card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.custom-card-location {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Styling for the navigation buttons */
+.slider-button {
+    background-color: #a0af50;
+    border: none;
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px; 
+    color: white; 
+    font-size: 20px; 
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.slider-button:hover {
+    background-color: #6f7938; 
+    transform: scale(1.1); 
+}
+.slider-button:disabled {
+    background-color: #ccc;
+}
+.left {
+    position: relative;
+    left: 10px;
+}
+
+.right {
+    position: relative;
+    right: 10px;
+}
+
+.card-slider::-webkit-scrollbar {
+    display: none; 
+}
+
+.card-slider {
+    scrollbar-width: none; 
+}
+.slider-container{
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+
+/* Recent searches end */
+
+
+/* Search cities Trends CSS */
+.trend-city-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+  background-color: #fff;
+  border-radius: 15px;
+  position: relative;
+  padding: 10px; 
+  max-height: 120px;
+}
+
+/* .trend-city-card:hover {
+  transform: scale(1.05);
+} */
+.trend-city-card:hover .watermark-image img{
+  opacity: 0.5;
+}
+.trend-city-info {
+  flex: 1;
+  padding: 15px;
+  z-index: 2;
+}
+.watermark-image {
+  position: absolute;
+  /* top: 0; */
+  right: 0;
+  width: 50%;
+  height: auto;
+  /* opacity: 0; */
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.watermark-image img {
+  width: 70%;
+  height: auto;
+  opacity: 0.1;
+  object-fit: contain;
+}
+.trend-city-image {
+  flex-shrink: 0;
+  margin-left: -40px; 
+  position: relative;
+}
+
+.trend-city-image img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #a0af50;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #838f43;
+}
+
+/* Top trendind Location */
+
+.wrapper-Top-Trending-Locations {
+  /* max-width: 1300px; */
+  width: 100%;
+  position: relative;
+
+}
+
+.wrapper-Top-Trending-Locations i {
+  height: 50px;
+  width: 50px;
+  background: #a0af50;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 1.25 rem;
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+
+}
+
+.wrapper-Top-Trending-Locations i:first-child {
+  left: -22px;
+  z-index: 1;
+}
+
+.wrapper-Top-Trending-Locations i:last-child {
+  right: -22px;
+
+}
+
+.wrapper-Top-Trending-Locations .carousel-Top-Trending-Locations {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4) - 12px);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+
+.carousel-Top-Trending-Locations::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-Top-Trending-Locations :where(.card-Top-Trending-Locations, .img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-Top-Trending-Locations.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel-Top-Trending-Locations.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel-Top-Trending-Locations.dragging .card-Top-Trending-Locations {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel-Top-Trending-Locations .card-Top-Trending-Locations {
+  scroll-snap-align: start;
+  height: auto;
+  max-height: 340px;
+  list-style: none;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  cursor: pointer;
+  width: 98%;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-Top-Trending-Locations .img {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+
+}
+
+.card-Top-Trending-Locations .img img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+.card-Top-Trending-Locations h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+
+.card-Top-Trending-Locations span {
+  color: #6a6d78;
+  font-size: 1.31rem;
+
+}
+.details-Top-Trending-Locations {
+  position: absolute; 
+  bottom: -100%; 
+  left: 0;
+  right: 0;
+  background: rgba(161, 175, 80, 0.37);
+  padding: 15px; 
+  text-align: center; 
+  transition: bottom 0.3s ease;
+}
+.tag-Top-Trending-Locations {
+  position: absolute;
+  top: 0px; 
+  left: 0px; 
+  background-color: rgba(161, 175, 80, 0.37); 
+  color: #545454; 
+  padding: 5px 10px;
+  border-radius: 0px 5px 30px 0px; 
+  font-weight: bold; 
+  z-index: 1; 
+}
+.card-Top-Trending-Locations:hover .chart-container {
+  opacity: 0.3;
+}
+
+.card-Top-Trending-Locations:hover .details-Top-Trending-Locations {
+  bottom: 0; 
+}
+@media screen and (max-width: 900px) {
+  .wrapper-Top-Trending-Locations .carousel-Top-Trending-Locations {
+      grid-auto-columns: calc((100% / 2) - 9px);
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper-Top-Trending-Locations .carousel-Top-Trending-Locations {
+      grid-auto-columns: 100%;
+
+  }
+}
+.slider-container-trend-location{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+.card-Top-Trending-Locations .chart-container {
+  width: 100%;
+  height: 200px; 
+  margin: 50px 0; 
+  transition: opacity 0.3s ease;
+}

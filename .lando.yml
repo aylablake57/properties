@@ -1,0 +1,32 @@
+name: properties-app
+recipe: laravel
+config:
+  webroot: public
+  php: '8.3'
+  database: mariadb
+  cache: none
+  xdebug: false
+proxy:
+  adminer:
+    - adminer.properties-app.lndo.site
+services:
+  adminer:
+    type: compose
+    services:
+      image: dehy/adminer
+      command: /bin/s6-svscan /etc/services.d
+    portforward: true
+  node:
+    type: node:20
+    scanner: false
+    ports:
+      - 3009:3009
+    build:
+      - npm install
+tooling:
+  dev:
+    service: node
+    cmd: npm run dev
+  build:
+    service: node
+    cmd: npm run build

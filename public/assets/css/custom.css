@@ -1,0 +1,239 @@
+@import url('base.css');
+
+.navigation-container a {
+    font-weight: 500;
+    font-size: 16px;
+    width: 20%;
+    float: left;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    text-align: center;
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.navigation-container a.active {
+    color: var(--accent);
+    background-color: var(--default);
+}
+
+.tab-content {
+    width: 100%;
+    padding: 30px;
+    background-color: var(--default);
+    float: left;
+    margin-bottom: 45px;
+}
+
+.tab-content .section-title {
+    color: var(--hover);
+    font-size: 18px;
+    line-height: 1.6em;
+    font-weight: 500;
+    margin: 15px;
+}
+
+.section-title h2 {
+    color: #222222;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    font-family: var(--primary-font-family);
+}
+
+.section-title p {
+    color: #5C727D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.section-content {
+    margin: 15px;
+}
+
+.tab-content .form-label {
+    margin-bottom: 5px;
+    color: var(--text-light);
+    font-size: 13px;
+    font-weight: 500;
+    font-family: var(--primary-font-family);
+}
+
+.tab-content .form-control,
+.tab-content .form-select,
+.tab-content .input-group-text {
+    font-size: 14px;
+    /* font-size: 13px; */
+    font-weight: 400;
+    /* padding: 0px 0px 0px 9px; */
+    border: 1px solid #eee;
+    box-shadow: none;
+    background-color: #eee !important;
+    /* opacity: 0.5; */
+    /* height: 56px; */
+    /* line-height: 1.4; */
+    border-radius: 4px !important;
+    border-radius: 8px;
+    /* float: left;
+    width: 100%; */
+    margin-bottom: 15px;
+}
+
+.widget-container .nav-link {
+    color: var(--text-light) !important;
+}
+
+.tab-content label {
+    margin-bottom: 5px;
+    color: var(--text-light);
+    font-size: 13px;
+    font-weight: 500;
+    font-family: var(--primary-font-family);
+}
+
+/* Leaflet Map */
+#view-map {
+    width: 100%;
+    height: 50vh;
+}
+
+/* Disclaimer css added by Hamza Amjad */
+.wrapper-footer{
+    border-top: 1px solid #e0e0e0;
+    text-align: justify;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    margin-top: auto;
+    box-sizing: border-box;
+}
+html, .main-dashboard-user {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 575px) {
+    .custom-edit-form-center{
+        align-items: center;
+        text-align: center;
+    }
+}
+/* Css added by Hamza Amjad for user dashboard alert chat */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+#speedometer-container{
+    height: 100%;
+}
+.alert-box {
+    border-left: 5px solid grey;
+    height: 100%;
+}
+.alert-box-button{
+    animation: pulse 2s infinite;
+}
+/* Additional Styling */
+.alert-box h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.alert-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+
+/* notification css  */
+ 
+#notification-list {
+    max-height: none;
+    overflow: visible;
+}
+
+#notification-list .notification-scroll {
+    max-height: 400px;
+    /* Adjust this value to change the maximum height */
+    overflow-y: auto;
+}
+
+#notification-list .notification-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+#notification-list .notification-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#notification-list .notification-scroll::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+#notification-list .notification-scroll::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#notification-list .unread {
+    background-color: #f0f8ff;
+    font-weight: bold;
+}
+
+#notification-list .read {
+    background-color: #ffffff;
+    color: #6c757d;
+}
+
+#notification-list .unread-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #007bff;
+    /* You can change this color */
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+#notification-list .dropdown-item {
+    display: flex;
+    align-items: center;
+}
+
+#notification-list .dropdown-item a {
+    flex-grow: 1;
+}
+
+#notification-list .unread {
+    background-color: #f0f8ff;
+    font-weight: bold;
+}
+
+#notification-list .read {
+    background-color: #ffffff;
+    color: #6c757d;
+}
+/* admin dashboard swiper image height and width fixed  by Hamza Amjad*/
+.fixed-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px; 
+}

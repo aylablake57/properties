@@ -1,0 +1,86 @@
+/* Home Slick slider added by Hamza Amjad */
+.slick-slider {
+    display: block; /* Change from flex to block */
+}
+
+.slick-slide {
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.slick-slide img {
+    max-width: 100%;
+    margin: 0 auto;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.logo-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background: #fff;
+    overflow: hidden;
+    width: 300px;
+    margin: 0 5px;
+}
+
+.logo-title {
+    position: relative;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333 !important;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.logo-title::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: height 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    z-index: -1;
+    transform: scaleY(1);
+}
+
+.logo-title:hover::after {
+    height: 8px;
+    background-color: #a0af50;
+    transform: scaleY(1.5);
+    bottom: -1px;
+}
+
+.default-img {
+    height: 150px;
+    filter: grayscale(100%);
+}
+
+.logo-block:hover .default-img {
+    filter: none; 
+}
+
+@media (max-width: 767px) {
+    .logo-block {
+        width: auto; /* Adjust width for small screens */
+        margin: 0 auto; /* Center the blocks */
+    }
+
+    .slick-slide {
+        padding: 10px;
+    }
+
+    .logo-title {
+        font-size: 14px;
+    }
+}
